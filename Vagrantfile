@@ -25,7 +25,7 @@ Vagrant.configure("2") do |config|
                   "--natdnshostresolver1", "on"]
   end
 
-  config.vm.provision :shell, :inline => "echo \"America/New_York\" | sudo tee /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata"
+  config.vm.provision :shell, :inline => "echo \"Asia/Shanghai\" | sudo tee /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata"
 
   config.vbguest.auto_update = false
 
